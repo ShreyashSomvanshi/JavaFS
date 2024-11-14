@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Canvas</title>
+        <script>
+            const x= document.getElementById("demo");
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else{
+
+                }
+            }
+            function showPosition(){
+                x.innerHTML = "Latitude" + position.cords.latitude + "<br> longitude" + position.cords.longitude;
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- getCurrentPosition, watchPosition, clearWatch -->
+        <p>Click to get your location</p>
+        <button onclick="getLocation()">Locate me!</button>
+        
+        <button onclick="showPosition()">Locate me!</button>
+        <p id="demo"></p>
+    </body>
+</html>

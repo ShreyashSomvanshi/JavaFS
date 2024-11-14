@@ -1,0 +1,47 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    font-size: 80.5%; /*1em = 10px*/
+}
+
+span{
+    background-color: bisque;
+}
+
+strong{color: red;}
+
+em{
+    color: aquamarine;
+}
+
+*{
+    margin: 10x;
+}
+
+ul.item{
+    /* border-color: brown; */
+    padding: 25px;
+    list-style-type: lower-alpha;
+}
+
+ul.item.li{
+    border-color: greenyellow;
+    padding: 2px;
+}
+
+h2 + p{
+    color: aqua;
+    font-style: italic;
+}
+
+ul.work{
+    color: coral;
+}
+
+ul > li{
+    list-style-type: georgian;
+}
+
+.indent{
+    text-indent: 100px;
+}
