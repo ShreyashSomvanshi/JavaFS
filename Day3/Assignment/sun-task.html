@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sunrise
+        </title>
+        <style>
+            .abc{
+                width: 250px;
+                height: 1250px;
+                margin: 50px;
+                background: url(/Day3/img/emoji1.jfif) no-repeat;
+                /* background-size: contain; */
+                position: relative;
+                animation-name: moving;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+            }
+            /* @keyframes moving{
+                from{transform: rotate(-45deg);}
+                to{transform: rotate(35deg);}
+            } */
+            @keyframes moving{
+                from{top: 1000px;}
+                to{top: 0px;}
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <br>
+        <br>
+        <div class="abc">
+            <p>Animation with timing function</p>
+        </div>
+    </body>
+</html>

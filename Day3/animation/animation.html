@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Animations
+        </title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            div:hover{
+                animation-name: animate-one;
+                animation-duration: 3s;
+            }
+            @keyframes animate-one {
+                0%{background-color: yellow;}
+                100%{background-color: aqua;}
+            }
+            .abc{
+                width: 2500px;
+                height: 350px;
+                margin: 50px;
+                background: url(/Day3/img/emoji1.jfif) no-repeat;
+                /* background-size: contain; */
+                position: relative;
+                animation-name: moving;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+            }
+            @keyframes moving{
+                from{left: 0;}
+                to{left: 50%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1><center>Animation</center></h1>
+            <p>Let's see the animations !!!</p>
+        </div>
+        <br>
+        <br>
+        <div class="abc">
+            <p>Animation with timing function</p>
+        </div>
+    </body>
+</html>

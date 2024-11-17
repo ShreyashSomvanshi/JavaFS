@@ -1,0 +1,13 @@
+
+img{
+width: 180px;
+height: 260px;
+justify-self: center;
+}
+.bookimgs{
+text-align: center;
+}
+.navnames{
+/* font-weight: bold; */
+text-transform: uppercase;
+}
