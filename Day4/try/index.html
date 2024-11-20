@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Bakery Store</title>
+</head>
+<body>
+    <header>
+        <h1>Online Bakery Store</h1>
+        <div class="cart">
+            <span>Cart: <span id="cart-count">0</span> items</span>
+            <button id="view-cart">View Cart</button>
+        </div>
+    </header>
+    <main>
+        <div class="product">
+            <h2>Chocolate Cake</h2>
+            <p>Delicious chocolate cake with rich frosting.</p>
+            <button class="add-to-cart" data-product="Chocolate Cake">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Vanilla Cupcake</h2>
+            <p>Soft vanilla cupcake topped with creamy frosting.</p>
+            <button class="add-to-cart" data-product="Vanilla Cupcake">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Red Velvet Cake</h2>
+            <p>Classic red velvet cake with cream cheese frosting.</p>
+            <button class="add-to-cart" data-product="Red Velvet Cake">Add to Cart</button>
+        </div>
+    </main>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-items"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

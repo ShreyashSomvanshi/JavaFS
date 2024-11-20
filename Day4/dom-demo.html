@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="container">
+        <textarea id="story"></textarea>
+        <button id="set" type="button">set</button>
+        <button id="clear" type="button">clear</button>
+    </div>
+ 
+    <script>
+        const story = document.getElementById("story");
+ 
+ 
+        const setText = document.getElementById("set");
+ 
+        setText.addEventListener("click", ()=>{
+            story.value = "hello"
+        });
+ 
+        const clearText = document.getElementById("clear");
+ 
+        clearText.addEventListener("click", ()=>{
+            story.value = ""
+        });
+    </script>
+</body>
+</html>
