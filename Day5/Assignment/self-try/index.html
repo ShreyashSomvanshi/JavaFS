@@ -13,7 +13,7 @@
             <input type="text" name="department" id="department" placeholder="Department">
             <label for="date">DOJ:</label>
             <input type="date" name="date" id="date" placeholder="Date of Joining">
-            <button id="addBtn" onclick="addEmp()">ADD</button>
+            <button id="addBtn" type="submit" onclick="addEmp()">ADD</button>
             <div id="dispAdd" style="margin: 10px 10px;"> </div>
         </div>
         <!-- <div id="dispAdd" style="margin: 10px 10px;">hi</div> -->
@@ -21,14 +21,14 @@
         <div id="searchEmp" style="margin: 20px 20px;">
             <h3># SEARCH EMPLOYEE</h3>
             <input type="number" name="searchId" id="searchId">
-            <button id="searchBtn">SEARCH</button>
-            <div id="dispSearch" style="margin: 10px 10px;"> </div>
+            <button id="searchBtn" type="button" onclick="searchEmply()">SEARCH</button>
+            <div id="dispSearch" style="margin: 10px 10px;"></div>
         </div>
         <hr>
         <div id="removeEmp" style="margin: 30px 40px;">
             <h3># REMOVE EMPLOYEE</h3>
             <input type="number" name="removeId" id="removeId">
-            <button id="removeBtn">REMOVE</button>
+            <button id="removeBtn" type="button" onclick="rmvEmp()">REMOVE</button>
             <div id="dispRemove" style="margin: 10px 10px;"></div>
         </div>
         <script src="script.js"></script>
