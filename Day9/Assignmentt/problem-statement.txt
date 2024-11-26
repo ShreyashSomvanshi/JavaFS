@@ -1,0 +1,10 @@
+Problem Statement
+Objective: Create a simple web application that allows users to log in using a username and password. If the credentials are correct, the user is redirected to a welcome page. If not, an error message is displayed.
+Solution Overview
+Node.js Server: Use the built-in http and url modules to handle requests and responses.
+HTML/CSS Interface: Create a login form for user input.
+JavaScript: Use basic form submission and response handling.
+has context menu
+
+
+has context menu

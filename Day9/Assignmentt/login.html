@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">LOGIN</h2>
+        <hr>
+        <!-- <form> -->
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" onclick="login()">LOGIN</button>
+        <!-- </form> -->
+        <script>
+            function check(){
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+
+                if(email && password){
+                    if(email === "admin@gmail.com" && password === "Pass@123"){
+                        return true;
+                    }
+                    else{
+                        alert('Incorrect Credentials!')
+                    }
+                }else{
+                    alert("Please enter Email/ Passsword.")
+                }
+            }
+
+            function login(){
+                if(check()){
+                    alert("Login Successful!")
+                    setTimeout(function() {
+                        window.location.href = '/welcome';
+                    }, 2000);
+                    
+                }
+            }
+        </script>
+
+    </body>
+</html>
