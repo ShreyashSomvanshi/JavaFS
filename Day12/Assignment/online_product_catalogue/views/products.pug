@@ -1,0 +1,30 @@
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title Login Success 
+    body
+        h2 Welcome, #{username}!
+        hr
+        if username === 'admin'
+            h3 ADD New Product
+            form(action='/addprod', method='POST')
+                label(for="productName")
+                input(type='text', placeholder="Enter Name", name='productName') 
+                br
+                label(for="productDesc")
+                input(type='text', placeholder="Enter Desc", name='productDesc')
+                br
+                label(for="productPrice")
+                input(type='number', placeholder="Enter price", name='productPrice')
+                br
+                button(type='submit') ADD PRODUCT
+        hr
+        div 
+            each product in products
+                ul
+                    li
+                        h2= product.name
+                        p Description: #{product.Desc}
+                        p Price: Rs. #{product.price}
+        hr
+        a(href = "/") Go back to login page

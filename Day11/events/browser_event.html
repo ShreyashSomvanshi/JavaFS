@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node js form submission</title>
+    </head>
+    <body>
+        <h1>Submit a message to Node.js server</h1>
+        <form id="form">
+            <label for="msg">Message: </label>
+            <input type="text" id="msg" name="msg" required>
+            <button type="submit">Submit</button>
+            
+        </form>
+        <script>
+            document.getElementById('form').addEventListener('submit',
+                function(event){
+                    event.preventDefault(); // prevent form from reloading the page
+                    var msg = document.getElementById('msg').value;
+                    // create post request to send the form data to nodejs servr
+                    fetch('/submit-msg', {
+                        method: 'POST',
+                        headers: {'content-type': 'application/json'},
+                        body: JSON.stringify({msg:msg})
+                    }).then(response => response.json())
+                    .then( data=>{
+                            alert('Server response: '+data.response);
+                    })
+                    .catch(error => console.error('Error: ',error));
+
+                    }
+            );
+        </script>
+    </body>
+</html>
