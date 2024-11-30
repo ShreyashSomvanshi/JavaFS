@@ -1,0 +1,24 @@
+doctype html 
+head
+    title LOGIN 
+body(style="background-color: azure;")
+    h2(style="text-align: center;") LOGIN
+    nav(style="text-align: right; margin-right: 50px") 
+        a(href="/") HOME
+    hr
+    div(style="display: flex; justify-content: center;")
+        div 
+            h4(style='text-align:center; color:red') #{error}
+        br
+        form(action='/validate', method='POST')
+            label(for='username') Username:
+            input(type='text', placeholder="Enter Username", name="username", required)
+            br
+            br
+            label(for='password') Password:
+            input(type='password', placeholder="Enter Password", name="password", required)
+            br
+            br
+            div(style="display: flex; justify-content: center;")
+                button(type="submit" style="border: none; border-radius: 10px; padding: 10px 20px; color: white; font-size: 15px; background-color: green; cursor: pointer;") LOGIN
+    hr
