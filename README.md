@@ -1,2 +1,0 @@
-# JavaFS
-Java Full Stack
