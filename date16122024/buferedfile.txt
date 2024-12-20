@@ -1,0 +1,1 @@
+This is a test content for BufferedOutputStream in Java, It will be read using BufferedInputStream

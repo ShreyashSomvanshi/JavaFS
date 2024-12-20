@@ -1,0 +1,3 @@
+Hello this is example of printwriter
+This is one more line
+ This is formatted number:  156.46
